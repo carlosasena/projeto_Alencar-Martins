@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --cor0:	#141E30; /* Primária (Autoridade)	Azul Noturno */
+    --cor1: #C5A059; /* Secundária (Elegância)	Dourado Champagne */
+    --cor2: #FDFDFD; /* Fundo Principal (Leitura)	Off-White */
+    --cor3: #F4F4F4; /* Fundo de Seção (Contraste)	Cinza Pérola */
+    --cor4: #2D2D2D; /* Texto Principal	Grafite Escuro */
+    --cor5: #8E6F3E; /* Destaque / Links	Bronze Acetinado */
+}
+
+@font-face {
+    font-family: 'titulo';
+    src: url('/fonts/playfair-display/PlayfairDisplay-Black.ttf') format('trueopen');
+}
+
+@font-face {
+    font-family: 'texto';
+    src: url(/fonts/montserrat/Montserrat-Regular.ttf) format('trueopen');
+}
+
+body {
+    background: var(--cor2);
+}
+
+h1,h2, h3, h4, h5, h6 {
+    font-family: titulo;
+}
+
+p [
+    font-family: texto;
+]
