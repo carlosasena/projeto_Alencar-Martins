@@ -662,8 +662,6 @@ footer::before {
   border-bottom: 1px solid rgba(224,225,221,0.08);
 }
 
-/* coluna 1: logo + descrição + redes */
-.footer-brand {}
 
 .footer-logo {
   height: 70px;
