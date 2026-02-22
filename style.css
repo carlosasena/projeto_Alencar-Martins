@@ -867,18 +867,101 @@ footer::before {
   transform: translateY(0);
 }
 
+/* ── HAMBURGUER ──────────────────────────────────────── */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  z-index: 200;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  background: var(--cor1);
+  transition: transform 0.35s ease, opacity 0.35s ease, background 0.35s ease;
+  transform-origin: center;
+}
+
+.nav-toggle.open span:nth-child(1) {
+  transform: translateY(6.5px) rotate(45deg);
+  background: var(--cor2);
+}
+.nav-toggle.open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.nav-toggle.open span:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
+  background: var(--cor2);
+}
+
 /* ── RESPONSIVO ──────────────────────────────────────── */
 @media (max-width: 768px) {
   header {
-    padding: 0 1.2rem;
+    padding: 0 1.4rem;
     height: 80px;
+    position: relative;
   }
+
+  .nav-toggle {
+    display: flex;
+  }
+
   header ul {
-    gap: 1.4rem;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: var(--cor5);
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1), padding 0.3s ease;
+    border-bottom: 1px solid rgba(182,145,71,0.15);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    z-index: 150;
   }
+
+  header ul.open {
+    max-height: 300px;
+    padding: 0.8rem 0 1.2rem;
+  }
+
+  header ul li {
+    width: 100%;
+    text-align: center;
+  }
+
   header ul li a {
-    font-size: 0.7rem;
-    letter-spacing: 0.1em;
+    display: block;
+    padding: 0.85rem 2rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.16em;
+    color: rgba(224,225,221,0.7);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    transition: color var(--transition), background var(--transition);
+  }
+
+  header ul li a:hover,
+  header ul li a.active {
+    color: var(--cor2);
+    background: rgba(182,145,71,0.06);
+  }
+
+  header ul li a::after {
+    display: none;
   }
 
   .hero {
@@ -926,9 +1009,6 @@ footer::before {
 }
 
 @media (max-width: 480px) {
-  header ul {
-    display: none;
-  }
   .especialidades-grid {
     grid-template-columns: 1fr;
   }
