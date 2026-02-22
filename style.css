@@ -1,38 +1,46 @@
 @charset "UTF-8";
 
 * {
-    margin: 0;
-    padding: 0;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --cor0:	#141E30; /* Primária (Autoridade)	Azul Noturno */
-    --cor1: #C5A059; /* Secundária (Elegância)	Dourado Champagne */
-    --cor2: #FDFDFD; /* Fundo Principal (Leitura)	Off-White */
-    --cor3: #F4F4F4; /* Fundo de Seção (Contraste)	Cinza Pérola */
-    --cor4: #2D2D2D; /* Texto Principal	Grafite Escuro */
-    --cor5: #8E6F3E; /* Destaque / Links	Bronze Acetinado */
+  --cor0: #141E30; /* Primária (Autoridade)      Azul Noturno       */
+  --cor1: #C5A059; /* Secundária (Elegância)     Dourado Champagne  */
+  --cor2: #FDFDFD; /* Fundo Principal (Leitura)  Off-White          */
+  --cor3: #F4F4F4; /* Fundo de Seção (Contraste) Cinza Pérola       */
+  --cor4: #2D2D2D; /* Texto Principal            Grafite Escuro     */
+  --cor5: #8E6F3E; /* Destaque / Links           Bronze Acetinado   */
 }
 
 @font-face {
-    font-family: 'titulo';
-    src: url('/fonts/playfair-display/PlayfairDisplay-Black.ttf') format('trueopen');
+  font-family: 'titulo';
+  src: url('/fonts/playfair-display/PlayfairDisplay-Black.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'texto';
-    src: url(/fonts/montserrat/Montserrat-Regular.ttf) format('trueopen');
+  font-family: 'texto';
+  src: url('/fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 
 body {
-    background: var(--cor2);
+  background-color: var(--cor2);
+  color: var(--cor4);
+  font-family: 'texto', sans-serif;
+  line-height: 1.6;
 }
 
-h1,h2, h3, h4, h5, h6 {
-    font-family: titulo;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'titulo', serif;
+  color: var(--cor0);
+  line-height: 1.2;
 }
 
-p [
-    font-family: texto;
-]
+p {
+  font-family: 'texto', sans-serif;
+  color: var(--cor4);
+}
