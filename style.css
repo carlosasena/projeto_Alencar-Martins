@@ -152,6 +152,14 @@ header ul li a:hover::after {
   width: 100%;
 }
 
+header ul li a.active {
+  color: var(--cor2);
+}
+header ul li a.active::after {
+  width: 100%;
+  background: var(--cor2);
+}
+
 /* ── HERO (index) ────────────────────────────────────── */
 .hero {
   position: relative;
