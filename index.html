@@ -1,127 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alencar &amp; Martins Advogadas</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <header>
-    <img src="image/logotipo.png" alt="Alencar &amp; Martins Advogadas">
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="escritorio.html">Escritório</a></li>
-      <li><a href="especialidade.html">Especialidades</a></li>
-      <li><a href="contato.html">Contato</a></li>
-    </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+    <!-- SEO Principal -->
+    <title>Alencar & Martins Advogadas | Advocacia Especializada</title>
+    <meta name="description" content="Escritório de advocacia especializado em Direito de Família, Trabalhista, Previdenciário, Cível e Internacional. Atuação com excelência técnica e atendimento humanizado.">
+    <meta name="keywords" content="advogada, direito de família, direito trabalhista, direito previdenciário, direito cível, direito internacional, advocacia, consultoria jurídica">
+    <meta name="author" content="Alencar & Martins Advogadas">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.alencaremartins.adv.br/">
+    <meta property="og:title" content="Alencar & Martins Advogadas">
+    <meta property="og:description" content="Excelência jurídica com olhar humano. Advocacia especializada em múltiplas áreas do direito.">
+    <meta property="og:image" content="https://www.alencaremartins.adv.br/image/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.alencaremartins.adv.br/">
+    <meta property="twitter:title" content="Alencar & Martins Advogadas">
+    <meta property="twitter:description" content="Excelência jurídica com olhar humano. Advocacia especializada em múltiplas áreas do direito.">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.alencaremartins.adv.br/">
+
+    <!-- Preload de fontes para performance -->
+    <link rel="preload" href="/fonts/Cormorant_Garamond/CormorantGaramond-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/fonts/montserrat/Montserrat-Regular.ttf" as="font" type="font/ttf" crossorigin>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/image/favicon.png">
+  </head>
+  <body>
+
+    <header>
+      <img src="image/logotipo.png" alt="Alencar &amp; Martins Advogadas" width="180" height="72" loading="eager">
+      <ul role="navigation" aria-label="Menu principal">
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="escritorio.html">Escritório</a></li>
+        <li><a href="especialidade.html">Especialidades</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
-    </button>
-  </header>
+      </button>
+    </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <span class="hero-eyebrow">Advocacia &amp; Consultoria Jurídica</span>
-      <h1>Alencar &amp; Martins</h1>
-      <h2>Excelência jurídica com olhar humano.</h2>
-      <p>
-        Um escritório contemporâneo que alia juventude, excelência técnica e atuação estratégica.
-        Conduzido por advogadas com sólida formação acadêmica e experiência consolidada, desenvolvemos
-        soluções jurídicas personalizadas, pautadas em rigor técnico e profundo comprometimento com a
-        defesa dos interesses de nossos clientes.
-      </p>
-      <p>
-        Com postura firme, comunicação clara e acompanhamento próximo, oferecemos não apenas
-        representação jurídica, mas orientação segura e estratégica em todas as fases do processo.
-      </p>
-      <a href="contato.html" class="hero-cta">Agende sua consulta →</a>
-    </div>
-    <div class="hero-divider"></div>
-  </section>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <span class="hero-eyebrow">Advocacia &amp; Consultoria Jurídica</span>
+        <h1>Alencar &amp; Martins</h1>
+        <h2>Excelência jurídica com olhar humano.</h2>
+        <p>
+          Somos um <strong>escritório contemporâneo</strong> que une juventude, <strong>excelência técnica</strong> e atuação estratégica. Conduzido por advogadas com sólida formação acadêmica e experiência consolidada, oferecemos <strong>soluções jurídicas personalizadas</strong>, pautadas em <strong>rigor técnico</strong>, análise aprofundada e total comprometimento com a <strong>defesa dos interesses</strong> de nossos clientes.
+        </p>
+        <p>
+          Com <strong>postura firme</strong>, <strong>comunicação clara</strong> e acompanhamento próximo, proporcionamos mais do que representação jurídica: entregamos <strong>orientação segura</strong>, estratégica e transparente em <strong>todas as etapas do processo</strong>.
+        </p>
+        <a href="contato.html" class="hero-cta" aria-label="Agende sua consulta">Agende sua consulta →</a>
+      </div>
+      <div class="hero-divider"></div>
+    </section>
 
-  <footer>
-    <div class="footer-top">
+    <footer>
+      <div class="footer-top">
 
-      <!-- Coluna 1: Marca + Redes -->
-      <div class="footer-brand">
-        <img class="footer-logo" src="image/logotipo.png" alt="Alencar &amp; Martins">
+        <!-- Coluna 1: Marca + Redes -->
+        <div class="footer-brand">
+        <img class="footer-logo" src="image/logotipo.png" alt="Alencar &amp; Martins" width="160" height="64" loading="lazy">
         <p class="footer-desc">
-          Advocacia com rigor técnico, estratégia e compromisso com as pessoas.
-          Atuação em Direito de Família, Trabalhista, Previdenciário, Cível e Internacional.
+          Advocacia pautada em <strong>rigor técnico</strong>, estratégia e <strong>compromisso com as pessoas</strong>. <strong>Atuação especializada</strong> em Direito de Família, Trabalhista, Previdenciário, Cível e Internacional, com <strong>atendimento humanizado</strong> e soluções eficazes.
         </p>
         <div class="footer-social">
-          <a href="https://instagram.com/" target="_blank" class="social-link" title="Instagram">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
-          <a href="https://linkedin.com/" target="_blank" class="social-link" title="LinkedIn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-          <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" class="social-link" title="WhatsApp">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-          </a>
-          <a href="https://facebook.com/" target="_blank" class="social-link" title="Facebook">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <!-- Coluna 2: Navegação -->
-      <div class="footer-col">
-        <p class="footer-col-title">Navegação</p>
-        <ul class="footer-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="escritorio.html">O Escritório</a></li>
-          <li><a href="especialidade.html">Especialidades</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </div>
-
-      <!-- Coluna 3: Contato Rápido -->
-      <div class="footer-col">
-        <p class="footer-col-title">Contato</p>
-        <div class="footer-contact-item">
-          <span class="footer-contact-icon">📞</span>
-          <div class="footer-contact-text">
-            <span class="footer-contact-label">Telefone / WhatsApp</span>
-            <span class="footer-contact-value">(XX) XXXXX-XXXX</span>
-          </div>
-        </div>
-        <div class="footer-contact-item">
-          <span class="footer-contact-icon">📧</span>
-          <div class="footer-contact-text">
-            <span class="footer-contact-label">E-mail</span>
-            <span class="footer-contact-value">contato@alencaremartins.adv.br</span>
-          </div>
-        </div>
-        <div class="footer-contact-item">
-          <span class="footer-contact-icon">📍</span>
-          <div class="footer-contact-text">
-            <span class="footer-contact-label">Endereço</span>
-            <span class="footer-contact-value">Rua Exemplo, 000 — Cidade, UF</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Faixa inferior -->
-    <div class="footer-bottom">
-      <p class="footer-copy">© 2025 Alencar &amp; Martins Advogadas — Todos os direitos reservados.</p>
-      <p class="footer-dev">
-        Desenvolvido por
-        <a href="mailto:carlosasena@email.com" title="Entre em contato com o desenvolvedor">Carlos Alberto De Sena</a>
-        &nbsp;·&nbsp;
-        <a href="https://github.com/carlosasena/carlosasena.github.io" target="_blank" title="Repositório no GitHub" rel="noopener noreferrer">
-          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle; margin-right:3px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>GitHub
+        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram" aria-label="Visite nosso Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         </a>
-      </p>
-    </div>
-  </footer>
-  <script src="script.js" defer></script>
-</body>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn" aria-label="Visite nosso LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener noreferrer" class="social-link" title="WhatsApp" aria-label="Fale conosco pelo WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        </a>
+        <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook" aria-label="Visite nosso Facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        </div>
+        </div>
+
+        <!-- Coluna 2: Navegação -->
+        <div class="footer-col">
+          <p class="footer-col-title">Navegação</p>
+          <ul class="footer-nav" aria-label="Menu do rodapé">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="escritorio.html">O Escritório</a></li>
+            <li><a href="especialidade.html">Especialidades</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Contato Rápido -->
+        <div class="footer-col">
+          <p class="footer-col-title">Contato</p>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon" aria-hidden="true">📞</span>
+            <div class="footer-contact-text">
+              <span class="footer-contact-label">Telefone / WhatsApp</span>
+              <span class="footer-contact-value">(XX) XXXXX-XXXX</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon" aria-hidden="true">📧</span>
+            <div class="footer-contact-text">
+              <span class="footer-contact-label">E-mail</span>
+              <span class="footer-contact-value">contato@alencaremartins.adv.br</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon" aria-hidden="true">📍</span>
+              <div class="footer-contact-text">
+                <span class="footer-contact-label">Endereço</span>
+                <span class="footer-contact-value">Rua Exemplo, 000 — Cidade, UF</span>
+              </div>
+              </div>
+          </div>
+
+      </div>
+
+        <!-- Faixa inferior -->
+      <div class="footer-bottom">
+          <p class="footer-copy">© 2025 Alencar &amp; Martins Advogadas — Todos os direitos reservados.</p>
+          <p class="footer-dev">
+          Desenvolvido por
+          <a href="mailto:carlosasenatech@gmail.com" title="Entre em contato com o desenvolvedor">Carlos Alberto De Sena</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://github.com/carlosasena/carlosasena.github.io" target="_blank" rel="noopener noreferrer" title="Repositório no GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="vertical-align:middle; margin-right:3px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>GitHub
+          </a>
+          </p>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
 </html>
